@@ -1,0 +1,13 @@
+*.class
+/**/.settings/
+/**/.classpath
+/**/target/
+.project
+/**/bin/
+*.war
+*.ear
+/**/*.iml
+.idea
+/.idea
+/**/.DS_Store
+

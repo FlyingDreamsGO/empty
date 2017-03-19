@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd"
+       default-autowire="byName">
+
+
+	<import resource="../META-INF/spring/application-config.xml" />
+	<import resource="../META-INF/spring/application-common.xml" />
+	<import resource="../META-INF/spring/application-persistance.xml" />
+	<import resource="../META-INF/spring/application-consumer.xml" />
+	<import resource="../META-INF/spring/application-manager.xml" />
+	<import resource="../META-INF/spring/application-service.xml" />
+	<import resource="../META-INF/spring/application-mq.xml" />
+	<import resource="../META-INF/spring/application-repo.xml" />
+	<import resource="../META-INF/spring/application-export-client.xml" />
+	<import resource="../META-INF/spring/application-export-api.xml"/>
+
+</beans>
