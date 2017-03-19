@@ -1,13 +1,13 @@
-*.class
 /**/.settings/
 /**/.classpath
 /**/target/
-.project
+/**/.project
 /**/bin/
 *.war
 *.ear
 /**/*.iml
-.idea
-/.idea
+/.idea/
+/**/rebel-remote.xml
+/**/rebel.xml
 /**/.DS_Store
 

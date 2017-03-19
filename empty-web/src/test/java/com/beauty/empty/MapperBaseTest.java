@@ -5,8 +5,6 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import javax.annotation.Resource;
-
 
 /**
  * 
@@ -18,17 +16,6 @@ import javax.annotation.Resource;
 
 @RunWith(value = SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {
-//		"file:src/main/webapp/META-INF/spring/application-common.xml",
-		"file:src/main/webapp/META-INF/spring/application-persistance.xml",
-//		"file:src/main/webapp/META-INF/spring/application-tair.xml",
-//		"file:src/main/webapp/META-INF/spring/application-consumer.xml",
-//		"file:src/main/webapp/META-INF/spring/application-manager.xml",
-//		"file:src/main/webapp/META-INF/spring/application-service.xml",
-//		"file:src/main/webapp/META-INF/spring/application-mq.xml",
-//		"file:src/main/webapp/META-INF/spring/application-repo.xml",
-//		"file:src/main/webapp/META-INF/spring/application-export-client.xml",
-//		"file:src/main/webapp/META-INF/spring/application-export-api.xml",
-				"classpath:application-test-config.xml"
 })
 public class MapperBaseTest {
 	//
