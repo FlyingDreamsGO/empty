@@ -29,6 +29,7 @@
 			<artifactId>empty-api</artifactId>
 		</dependency>
 	</dependencies>
+
 	<build>
 		<finalName>empty-web</finalName>
 		<plugins>
