@@ -14,7 +14,6 @@ import java.io.IOException;
 
 /**
  * hessian序列化工具类
- * @author SuoLong
  */
 public class HessianUtils {
     private final static Logger logger = LoggerFactory.getLogger(HessianUtils.class);
