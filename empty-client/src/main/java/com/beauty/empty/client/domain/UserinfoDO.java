@@ -2,24 +2,22 @@ package com.beauty.empty.client.domain;
 
 import java.io.Serializable;
 
-/**
- * Created by kenan@xiaokakeji.com
- * on 2017/3/19.
- */
-public class UserInfoDO implements Serializable {
-
-    private int id;
+public class UserinfoDO implements Serializable {
+    private long id;
 
     private String name;
 
     private int age;
 
+    private String birthday;
 
-    public int getId() {
+    private static final long serialVersionUID = 1L;
+
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -37,5 +35,13 @@ public class UserInfoDO implements Serializable {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 }

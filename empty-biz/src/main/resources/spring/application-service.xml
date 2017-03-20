@@ -21,9 +21,7 @@
 	
 
 
-	<!--<bean id="userRouteService" class="com.qdian.user.service.xxx"/>-->
-
-
+	<bean id="userInfoService" class="com.beauty.empty.service.impl.UserInfoServiceImpl"/>
 
 
 </beans>

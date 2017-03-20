@@ -1,5 +1,7 @@
 package com.beauty.empty.client.service;
 
+import com.beauty.empty.client.domain.UserinfoDO;
+
 /**
  * Created by kenan@xiaokakeji.com
  * on 2017/3/19.
@@ -7,5 +9,5 @@ package com.beauty.empty.client.service;
 
 public interface UserInfoService {
 
-    void createUserInfo();
+    void createUserInfo(UserinfoDO userinfoDO);
 }

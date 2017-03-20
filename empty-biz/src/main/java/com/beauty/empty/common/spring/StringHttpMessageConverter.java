@@ -72,8 +72,8 @@ public class StringHttpMessageConverter extends AbstractHttpMessageConverter<Str
     protected void writeInternal(String s, HttpOutputMessage outputMessage) throws IOException {
         Charset charset = null;
         MediaType contentType = outputMessage.getHeaders().getContentType();
-        if (contentType != null && contentType.getCharSet() != null) {
-            charset = contentType.getCharSet();
+        if (contentType != null && contentType.getCharset() != null) {
+            charset = contentType.getCharset();
         } else {
             charset = this.defaultCharset;
             if (contentType != null) {
@@ -89,8 +89,8 @@ public class StringHttpMessageConverter extends AbstractHttpMessageConverter<Str
     }
 
     private Charset getContentTypeCharset(MediaType contentType) {
-        if (contentType != null && contentType.getCharSet() != null) {
-            return contentType.getCharSet();
+        if (contentType != null && contentType.getCharset() != null) {
+            return contentType.getCharset();
         } else {
             return this.defaultCharset;
         }
