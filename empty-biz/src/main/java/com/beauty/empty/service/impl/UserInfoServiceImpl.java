@@ -1,9 +1,9 @@
 package com.beauty.empty.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.beauty.empty.client.domain.UserinfoDO;
 import com.beauty.empty.client.service.UserInfoService;
 import com.beauty.empty.manager.UserInfoManager;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 

@@ -6,12 +6,21 @@
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- 对包中的所有类进行扫描类上的注解，以完成Bean创建和自动依赖注入的功能 需要更改 -->
-    <context:component-scan base-package="com.beauty.empty">
+    <context:component-scan base-package="com.beauty.empty.service.impl, com.beauty.empty.manager">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
-
+    <!-- 配置线程池 -->
+    <bean id="threadPoolTaskExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+        <!-- 线程池维护线程的最少数量 -->
+        <property name="corePoolSize" value="5" />
+        <!-- 线程池维护线程所允许的空闲时间 10分钟-->
+        <property name="keepAliveSeconds" value="600" />
+        <!-- 线程池维护线程的最大数量 -->
+        <property name="maxPoolSize" value="60" />
+        <!-- 线程池所使用的缓冲队列 -->
+        <property name="queueCapacity" value="20" />
+    </bean>
 
 
 </beans>
