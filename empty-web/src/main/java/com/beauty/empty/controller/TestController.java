@@ -33,4 +33,10 @@ public class TestController {
         userinfoDO.setBirthday("1988-12-20");
         userInfoService.createUserInfo(userinfoDO);
     }
+
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public void login() {
+        System.out.println("登录");
+    }
 }
