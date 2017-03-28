@@ -44,7 +44,7 @@
     .toolbar {
         background: #f2f2f2;
         padding: 10px;
-    / / border: 1 px solid #dfe6ec;
+        border: 1px solid #dfe6ec;
         margin: 10px 0px;
     }
 
