@@ -1,3 +1,4 @@
+<!--suppress ALL -->
 <template>
     <el-form :model="ruleForm2" :rules="rules2" ref="ruleForm2" label-position="left" label-width="0px"
              class="demo-ruleForm login-container">
@@ -16,6 +17,7 @@
     </el-form>
 </template>
 
+<!--suppress JSUnresolvedVariable -->
 <script>
     import {requestLogin} from '../api/api';
     //import NProgress from 'nprogress'
